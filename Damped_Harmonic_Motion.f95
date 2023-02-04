@@ -29,7 +29,7 @@ w = sqrt(k/m)
 
 open(100, file="x.dat")
 
-do t = 1, 100
+do t = 1, nmax
 Amp = Amp*e**((-b*t)/(2.0*m))
 x(t) = Amp*cos(w*t + init)
 v(t) = -w*Amp*sin(w*t + init)
